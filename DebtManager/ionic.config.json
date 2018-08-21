@@ -1,0 +1,7 @@
+{
+  "name": "DebtManager",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
