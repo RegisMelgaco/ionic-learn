@@ -15,8 +15,6 @@
 
 <ion-content padding>
 
-  <p>{{ test }}</p>
-
   <ion-grid>
     <ion-row>
       <ion-col col-lg-6 col-sm-12>
@@ -26,33 +24,32 @@
             <ion-avatar item-start>
               <img src="https://ionicframework.com/dist/preview-app/www/assets/img/marty-avatar.png">
             </ion-avatar>
-            <h2>Marty McFly</h2>
-            <p>November 5, 1955</p>
+            <h2>{{post1.owner}}</h2>
+            <p>{{post1.date}}</p>
           </ion-item>
 
-          <img src="https://ionicframework.com/dist/preview-app/www/assets/img/advance-card-bttf.png">
+          <img src={{post1.image_url}}>
 
           <ion-card-content>
-            <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?!
-              Whoa. This is heavy.</p>
+            <p>{{post1.description}}</p>
           </ion-card-content>
 
           <ion-row>
             <ion-col>
               <button ion-button icon-start clear small>
                 <ion-icon name="thumbs-up"></ion-icon>
-                <div>12 Likes</div>
+                <div>{{post1.like_count}}</div>
               </button>
             </ion-col>
             <ion-col>
               <button ion-button icon-start clear small>
                 <ion-icon name="text"></ion-icon>
-                <div>4 Comments</div>
+                <div>{{post1.comment_count}}</div>
               </button>
             </ion-col>
             <ion-col center text-center>
               <ion-note>
-                11h ago
+                {{post1.time}}
               </ion-note>
             </ion-col>
           </ion-row>
